@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM episodeV WHERE INSTR(line, 'Luke')>0;

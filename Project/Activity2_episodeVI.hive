@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM episodeVI WHERE INSTR(line, 'Luke')>0;
