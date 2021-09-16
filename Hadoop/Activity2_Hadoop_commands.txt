@@ -1,0 +1,13 @@
+# Opens file01.txt in vim. Paste the text from above and save/exit.
+vim file01.txt
+
+# Copy the file into the HDFS
+hdfs dfs -put ./file01.txt /user/root/
+
+#Activity2_wordcount.pig file is created with this command
+vim wordcount.pig
+
+pig wordcount.pig
+
+
+bin/hdfs dfs -cat /user/root/results/part-r-00000

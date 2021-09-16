@@ -1,0 +1,13 @@
+# copy the content of sales file into .csv file as mentioned in activity description
+
+vim sales.csv
+
+# Once the file is ready, put it in the HDFS
+
+hdfs dfs -put ./sales.csv /user/root/
+
+
+pig salesCSV.pig
+
+
+hdfs dfs -cat /user/root/salesOutput/part-r-00000
